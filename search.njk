@@ -1,0 +1,26 @@
+---
+layout: page
+title: Search
+---
+
+<link href=" {{'/pagefind/pagefind-ui.css' | url }}" rel="stylesheet">
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --pagefind-ui-primary: #eeeeee;
+            --pagefind-ui-text: #eeeeee;
+            --pagefind-ui-background: #152028;
+            --pagefind-ui-border: #152028;
+            --pagefind-ui-tag: #152028;
+        }
+    }
+</style>
+
+<h2>Results</h2>
+
+<div id="search" class="search"></div>
+
+
+
+<script src="{{ '/pagefind/pagefind-ui.js' | url }}" onload="new PagefindUI({ element: '#search', showImages: false, showEmptyFilters: false });"></script>

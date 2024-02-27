@@ -1,0 +1,6 @@
+<div id="breadcrumbs" class="text-light">
+    {# <a href="{{ '/' | url }}">Home</a> #}
+    {%- for entry in collections.all | eleventyNavigation %}
+    <a class="link-light" href="{{ entry.url | url }}">{{ entry.key }}</a> >
+    {%- endfor -%}
+</div>

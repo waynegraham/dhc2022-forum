@@ -1,0 +1,7 @@
+{
+    "defaults": {
+        "concurrency": 10,
+        "standard": "WCAG2AA",
+        "runners": ["htmlcs"]
+    }
+}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html class="no-js" lang="en"> 
+<head>
+    {% include 'head.njk' %}
+</head>
+<body>
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="bi bi-chevron-up"></i>
+        <span class="visually-hidden-focusable">Back to Top</span>
+    </button>
+
+    {% include 'navbar.html' %}
+    {% include 'banner.html' %}
+
+    {{ content | safe }}
+
+    {% include 'footer.html' %}
+    {% include 'scripts.html' %}
+</body>
+</html>
