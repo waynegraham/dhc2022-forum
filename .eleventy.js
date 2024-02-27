@@ -193,7 +193,7 @@ module.exports = (eleventyConfig) => {
 			widths: [200, 300, 400, 600],
 			formats: ["avif", "jpeg", null],
 			outputDir: path.join(eleventyConfig.dir.output, "assets", "images"),
-			urlPath: "/publications/assets/images/",
+			urlPath: "/dhc-2022/assets/images/",
 		});
 
 		let imageAttributes = {
@@ -221,6 +221,6 @@ module.exports = (eleventyConfig) => {
 		// Pre-process *.md files with: (default: `liquid`)
 		markdownTemplateEngine: "njk",
 
-		pathPrefix: "/publications/", // omit this line if using custom domain
+		pathPrefix: "/dhc-2022/", // omit this line if using custom domain
 	};
 };

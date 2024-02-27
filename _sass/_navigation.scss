@@ -1,0 +1,31 @@
+@import 'variables';
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,1);
+}
+
+.nav-link:after {
+  content: "|";
+  margin-left: 15px;
+  // position: absolute;
+}
+
+.bg-burgundy {
+  background-color: $clir_burgundy!important;
+}
+
+.margin-top-medium {
+  margin-top: 10px;
+}
+
+.row-border-top {
+  border-top: 1px solid $separator_color;
+}
+
+.pagination {
+  margin: 20px 0;
+}
+
+.traditional-nav {
+  background-color: $clir_mint;
+}

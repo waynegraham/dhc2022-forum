@@ -1,0 +1,105 @@
+@import 'footer';
+@import 'variables';
+@import 'navigation';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
+// https://ashleemboyer.com/blog/accessible-smooth-scroll-to-top-buttons-with-little-code
+html {
+    @media (prefers-reduced-motion: no-preference) {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    &.header-anchor {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+p {
+    line-height: 2rem;
+}
+
+// TODO: hack to control image sizes
+.img-thumbnail {
+    max-height: 300px;
+    max-width: 234px;
+}
+
+.small-image {
+    max-height: 300px;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+#header {
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/record.jpg');
+    background-image: linear-gradient(rgba(40, 33, 17, 0.5), rgba(40, 33, 17, 0.5)), url('../images/record.jpg');
+    height: 50vh;
+    background-position: center center;
+    background-size: cover;
+
+    .header-box {
+        background-color: rgba(0,0,0,0.82);
+        border-left: 8px solid $clir_burgundy;
+        width: 56%; // TODO: check how this is set
+
+        h1 {
+            font-weight: 700;
+        }
+    }
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: $clir_burgundy;
+    border-color: $clir_burgundy;
+}
+
+.btn-danger {
+    background-color: $clir_burgundy;
+    border-color:$clir_burgundy;
+
+    &:hover {
+        background-color: lighten($clir_burgundy, 5%);
+    }
+}
+
+.float-start, .float-end { margin: 1.6rem; }
+
+main {
+    a {
+        color: rgb(41,107,164);
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        line-height: 30.4px;
+        font-weight: 400;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    ul {
+        li {
+            line-height: 30.4px;
+            font-size: 18px;
+        }
+    }
+}
