@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Get Glue On It (GGOI): A Nontoxic Coating Protocol for Creating 3D Models of Shiny Lithic Artifacts",
+        "authors": "Allison Fashing, Chloe Dame, Jes Holler, Savannah Johnson, Leah Evans-Janke, Jylisa Doney, Marco Seiferie-Valencia",
+        "video_url": "https://youtu.be/A-M9s_L0bjg",
+        "slides_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/07/22DHCS-demovid-slides-Fashing.pdf",
+        "transcript_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/11/22DHCS-dv-trans-Fashing-get-glue-on-it.pdf",
+        "description": "<p>In 2021, the University of Idaho Library and Alfred W. Bowers Laboratory of Anthropology received a CLIR DHC grant to digitize the Crabtree Lithic Comparative Collection, a preeminent collection of lithic tools created and collected by Crabtree. Most of these tools are made of obsidian, resulting in a problematic level of shininess when attempting to take 2D photos and create 3D models using photogrammetry. Throughout the first year of our project, the grant leadership team tried numerous coating options to dull the shine of these artifacts, options with documented success in external projects but with limited success in ours, including baking powder, cornstarch, athlete’s foot spray, and talc-free baby powder. Even when a coating worked well enough to render a semi-complete 3D model in Agisoft Metashape, our team had to deal with the effects of applying these coatings, including strong odors and inhaling fine powder particles – effects that were not sufficiently mitigated by wearing N95 masks. During a Microsoft Teams chat in early spring 2021, our grant team brainstormed a new, nontoxic coating protocol using a mixture of Elmer’s White School Glue and water that can be painted on the artifacts, with each coat drying in approximately 5 to 10 minutes. The result was a matte finish without added color, which was seamless to photograph and resulted in high-quality 3D models on the first attempt. In this video, we will demonstrate and discuss our new coating protocol and show a time-lapse of the 3D model creation process.</p>"
+    },
+    {
+        "title": "Linked Open Dime Novels; or, 19th Century Fiction and 21st Century Data",
+        "authors": "Matthew Short, Demian Katz",
+        "video_url": "https://youtu.be/BzfEQFjU45U",
+        "slides_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/07/22DHCS-demovid-slides-Short.pdf",
+        "transcript_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/11/22DHCS-dv-trans-Short-linked-Open-dime-novels.pdf",
+        "description": "<p>The Albert Johannsen Project, funded in 2016, led to the digitization of more than 5,000 dime novels and story papers published by Beadle &amp; Adams and held in the Johannsen Collection at Northern Illinois University and in Falvey Memorial Library’s Special Collections at Villanova University. In addition to digitization, these materials were indexed and described in the online bibliography at dimenovels.org, which leverages linked data for reuse and sharing. This project taught us the power of sharing data openly and using common identifiers, which helped us to identify and correct problems with metadata and digital surrogates, and also enabled new services, like cross-referencing editions and aggregating each partner’s digital dime novel holdings. We have used this model to go on to two NEH-funded Humanities and Humanities Reference Resources projects, the Street &amp; Smith Project and recently-awarded Tousey Project, which has enlarged the collaboration to include additional partners at Stanford University, Bowling Green State University, and Oberlin College and Conservatory.</p><p>This short video will highlight a few of the challenges we encountered while working on the Johannsen Project and some of the services, solutions, and workflows that we developed.</p>"
+    },
+    {
+        "title": "Uncovering CUNY’s Audiovisual Heritage",
+        "authors": "Kelly Haydon",
+        "video_url": "https://youtu.be/dGHGfaetaJ8",
+        "slides_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/07/22DHCS-demovid-slides-Haydon.pdf",
+        "transcript_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/11/22DHCS-dv-trans-Haydon-uncovering-cuny.pdf",
+        "description": "<p>Established in 1965, the City University of New York (CUNY) is one of the country’s largest and most diverse university networks. Formed by 25 campuses, many with their own library and archival collections, the network contains a vibrant – but rarely seen – history caught on tape.</p><p>Uncovering CUNY’s Audiovisual Heritage is a two-year project to preserve the diversity of compelling viewpoints that emerged in New York City during the last two decades of the twentieth century. Highlights from this era include a never-before-seen recording of Shirley Chisholm speaking at Medgar Evers University and the entirety of HoMoVISIONES, the first TV series from the LGBTQ Latino perspective. Another valuable resource is the City Club of New York’s weekly televised Friday Forum, which invited political luminaries such as Al Sharpton, Ruth Messinger, Rudy Giuliani, and Betty Shabazz to speak on various policy issues facing NYC in the 1990s.</p><p>More than just a digitization project, Uncovering CUNY operates in the spirit of collaboration and resource-sharing. Managed by CUNY-TV Archives, digital files are created using the department’s magnetic media transfer facilities and preserved in the station’s digital repository, eliminating the most expensive barriers to preservation for the archives and libraries in the network. Engaging CUNY-TV’s talent and broadcast facilities, the project is presented as a short video on the processes and lessons learned. In addition, it includes collection highlights and interviews with project archivists, content creators, and technicians.</p>"
+    },
+    {
+        "title": "Afterword",
+        "authors": "Sharon M. Burney",
+        "pdf_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/11/22DHCS-afterword-Burney.pdf"
+    }
+]

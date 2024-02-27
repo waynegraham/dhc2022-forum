@@ -1,7 +1,7 @@
 // based on https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350
 
 //Get the button
-let mybutton = document.getElementById("btn-back-to-top");
+const mybutton = document.getElementById("btn-back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
