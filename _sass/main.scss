@@ -49,14 +49,14 @@ p {
 #header {
     // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/record.jpg');
     background-image: linear-gradient(rgba(40, 33, 17, 0.5), rgba(40, 33, 17, 0.5)), url('../images/record.jpg');
-    height: 50vh;
+    height: 30vh;
     background-position: center center;
     background-size: cover;
 
     .header-box {
         background-color: rgba(0,0,0,0.82);
         border-left: 8px solid $clir_burgundy;
-        width: 56%; // TODO: check how this is set
+        width: 60vw; // TODO: check how this is set
 
         h1 {
             font-weight: 700;

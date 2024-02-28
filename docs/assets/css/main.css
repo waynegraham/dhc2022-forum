@@ -137,14 +137,14 @@ p {
 
 #header {
   background-image: linear-gradient(rgba(40, 33, 17, 0.5), rgba(40, 33, 17, 0.5)), url("../images/record.jpg");
-  height: 50vh;
+  height: 30vh;
   background-position: center center;
   background-size: cover;
 }
 #header .header-box {
   background-color: rgba(0, 0, 0, 0.82);
   border-left: 8px solid #9a1c46;
-  width: 56%;
+  width: 60vw;
 }
 #header .header-box h1 {
   font-weight: 700;
