@@ -2,20 +2,23 @@
     {
         "title": "Introduction",
         "authors": "Hannah Scates Kettler and Katie McCormick",
-        "text_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/11/22DHCS-introduction.pdf"
+        "text_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/11/22DHCS-introduction.pdf",
+        "tags": "remarks"
     },
     {
         "title": "Opening Remarks",
         "authors": "Sharon M. Burney",
         "slide_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/07/22DHCS-slides-Welcome-Remarks-Burney.pdf",
         "transcript": "https://www.clir.org/wp-content/uploads/sites/6/2023/11/22DHCS-opening-remarks-Burney.pdf",
-        "youtube_id": "aFXkxN_6KrU"
+        "youtube_embed": "<iframe class=\"card-img-top\" src=\"https:\/\/www.youtube.com\/embed\/aFXkxN_6KrU?si=gxMqBAJmpx9qC_lI\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "tags": "remarks"
     },
     {
         "title": "Keynote, “So that Future Organizers Won't Have to Reinvent the Wheel”: Activating Digital Archives for Liberatory Uses",
         "authors": "Michelle Caswell",
         "text_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/11/22DHCS-keynote-Caswell.pdf",
         "slide_url": "https://www.clir.org/wp-content/uploads/sites/6/2023/07/22DHCS-slides-Keynote-Caswell.pdf",
-        "youtube_id": "aFXkxN_6KrU"
+        "youtube_embed": "<iframe class=\"card-img-top\" src=\"https:\/\/www.youtube.com\/embed\/aFXkxN_6KrU?si=NV0uwCGpR3XyNRcH&amp;start=696\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "tags": "remarks"
     }
 ]

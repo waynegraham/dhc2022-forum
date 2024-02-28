@@ -8,7 +8,7 @@ const markdownItRenderer = require("markdown-it")("commonmark");
 
 const schema = require("@quasibit/eleventy-plugin-schema"); // https://www.maxivanov.io/add-structured-data-to-eleventy-blog/
 
-const { execSync } = require('child_process'); // search https://rknight.me/using-pagefind-with-eleventy-for-search/
+const { execSync } = require("child_process"); // search https://rknight.me/using-pagefind-with-eleventy-for-search/
 
 const striptags = require("striptags"); // @see https://dev.to/jonoyeong/excerpts-with-eleventy-4od8
 
@@ -44,7 +44,7 @@ function extractExcerpt(article) {
 module.exports = (eleventyConfig) => {
 	// Copy the "assets" directory to the compiled "_site" folder.
 	eleventyConfig.addPassthroughCopy("assets");
-	eleventyConfig.addPassthroughCopy('CNAME');
+	eleventyConfig.addPassthroughCopy("CNAME");
 
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
@@ -61,13 +61,13 @@ module.exports = (eleventyConfig) => {
 	});
 
 	// Collection overrides
-	eleventyConfig.addCollection("report", function(collection) {
+	eleventyConfig.addCollection("report", function (collection) {
 		return collection.getAllSorted().reverse();
 	});
 
 	// Search https://rknight.me/using-pagefind-with-eleventy-for-search/
-	eleventyConfig.on('eleventy.after', () => {
-		execSync(`npx pagefind --site \"docs\"`, { encoding: 'utf-8' })
+	eleventyConfig.on("eleventy.after", () => {
+		execSync(`npx pagefind --site \"docs\"`, { encoding: "utf-8" });
 	});
 
 	// Get the first `n` elements of a collection.
@@ -107,17 +107,18 @@ module.exports = (eleventyConfig) => {
 			// return 0;
 		});
 		return sorted;
-
 	});
 
 	eleventyConfig.addFilter("sortZenodoDate", (obj) => {
-		const sorted = [...obj]
+		const sorted = [...obj];
 		sorted.sort((item1, item2) => {
-			return item1.metadata.publication_date < item2.metadata.publication_date ? 1 : -1
+			return item1.metadata.publication_date < item2.metadata.publication_date
+				? 1
+				: -1;
 		});
 
 		return sorted;
-	})
+	});
 
 	// @see https://www.11ty.dev/docs/plugins/rss/#use-with-other-template-languages
 	eleventyConfig.addNunjucksFilter("absoluteUrl", pluginRss.absoluteUrl);
@@ -125,7 +126,9 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addNunjucksFilter("dateToRfc822", pluginRss.dateToRfc822);
 
 	eleventyConfig.addFilter("readableIsoDateDay", (dateObj, format, zone) => {
-		return DateTime.fromISO(dateObj, { zone: zone || "utc" }).toFormat( format || "LLL d, yyyy");
+		return DateTime.fromISO(dateObj, { zone: zone || "utc" }).toFormat(
+			format || "LLL d, yyyy"
+		);
 	});
 
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {

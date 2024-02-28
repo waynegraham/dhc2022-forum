@@ -6,154 +6,22 @@ layout: default
         <div class="px-3 py-3 pt-md-5 pb-md-4 border-bottom">
             {{ content | safe }}
         </div>
-        <div class="px-3 py-3 pt-md-5 pb-md-4 border-bottom">
-            <h2>Youtube Playlist</h2>
-            <div class=".ratio-16x9">
-                    <iframe 
-                        src="https://www.youtube.com/embed/videoseries?si=QWuXiJP6gcVta9FC&amp;list=PLl7V7chP13lBBDJh51Or5qtkQ9FPM-cb5" title="{{ remark.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
 
-        <div class="px-3 py-3 pt-md-5 pb-md-4 border-bottom">
-            <h2>Remarks</h2>
-            {% for remark in remarks %}
-                <h3>
-                    <span class="fw-bold">{{ remark.title }}</span>, {{ remark.authors }}</h3>
+        <h2 id="toc">Table of Contents</h2>
 
-                {# {% if 'youtube_id' in remark %}
-                <div class="ratio ratio-16x9">
-                    <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="{{ remark.youtube_id}}"></div>
-                </div>
-                {% endif %} #}
-
-                <ul class="list-inline">
-                    {% if 'text_url' in remark %}
-                        <li class="list-inline-item">
-                            <a href="{{ remark.text_url }}">
-                                <i class="bi bi-file-earmark-pdf-fill"></i> Text
-                            </a>
-                        </li>
-                    {% endif %}
-                    {% if 'slide_url' in remark %}
-                        <li class="list-inline-item">
-                            <a href="{{ remark.slide_url }}">
-                                <i class="bi bi-laptop"></i> Slides
-                        </a>
-                        </li>
-                    {% endif %}
-                </ul>
-
-            </p>
-        {% endfor %}
-    </div>
-
-    <div class="px-3 py-3 pt-md-5 pb-md-4 border-bottom">
-        <h2>Presentations</h2>
-        {% for presentation in presentations %}
-
-            <div class="talk py-4 border-bottom">
-                <h3>{{ presentation.title }}</h3>
-                <p>{{ presentation.author }}</p>
-                {{ presentation.description | safe }}
-                <ul class="list-inline">
-                    {% if 'slides_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.slides_url }}"><i class="bi bi-laptop"></i> Slides</a></li>
-                    {% endif %}
-                    {% if 'paper_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.paper_url }}"><i class="bi bi-file-earmark-text"></i> Paper</a></li>
-                    {% endif %}
-                    {% if 'report_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.report_url }}"><i class="bi bi-file-earmark-text"></i> View the Report</a></li>
-                    {% endif %}
-                    {% if 'resources_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.resources_url }}"><i class="bi bi-file-earmark-text"></i> Resources</a></li>
-                    {% endif %}
-                </ul>
-            </div>
-        {% endfor %}
-    </div>
-
-    <div class="px-3 py-3 pt-md-5 pb-md-4 border-bottom">
-        <h2>Closing Plenary Panel</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YzylOR-FY5o?si=GXkU52_6TiSPEkMG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <p>Thoughtfully planning for and executing successful digitization initiatives can take years. But when centered on digitizing hidden collections, projects often hold the potential to illuminate the present in unpredictable ways. How can we keep digitization operations going for the long term while leaving room to be flexible and–when necessary–to regroup in order to adapt to changing circumstances and needs? In what ways can our digitization strategies and digitized collections deepen public engagement with contemporary issues? How can we keep our digital collections growing while still supporting efforts to raise awareness about the value of using cultural materials to understand current events? Panelists will offer their perspectives on questions like these, followed by a moderated discussion and audience Q&amp;A.</p>
-        <p>The closing panel comprises three presentations:</p>
-
-        <ul class="border-bottom pb-3">
-            <li>The Border in Print: Digitizing Periodicals in the US-Mexico Border Region Digitizing</li>
-            <li>PrisonPandemic: Scaling and Adapting Document Management During COVID-19</li>
-            <li>Vascular Plant Specimens from a Country at War</li>
+        <ul>
+            <li><a href="#remarks">Remarks</a></li>
+            <li><a href="#presentations">Presentations</a></li>
+            <li><a href="#closing-plenary-panel">Closing Plenary Panel</a></li>
+            <li><a href="#demonstration-videos">Demonstration Videos</a></li>
+            <li><a href="#posters">Posters</a></li>
         </ul>
 
-        {% for presentation in closing %}
-            <div class="talk py-4 border-bottom">
-                <h3>{{ presentation.title }}</h3>
-                <p>{{ presentation.author }}</p>
-                {{ presentation.description | safe }}
-                <ul class="list-inline">
-                    {% if 'slides_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.slides_url }}"><i class="bi bi-laptop"></i> Slides</a></li>
-                    {% endif %}
-                    {% if 'paper_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.paper_url }}"><i class="bi bi-file-earmark-text"></i> Paper</a></li>
-                    {% endif %}
-                    {% if 'report_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.report_url }}"><i class="bi bi-file-earmark-text"></i> View the Report</a></li>
-                    {% endif %}
-                    {% if 'resources_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.resources_url }}"><i class="bi bi-file-earmark-text"></i> Resources</a></li>
-                    {% endif %}
-                </ul>
-            </div>
-        {% endfor %}
-    </div>
-
-    <div class="px-3 py-3 pt-md-5 pb-md-4 border-bottom">
-        <h2>Posters</h2>
-        {% for presentation in posters %}
-            <div class="talk py-4 border-bottom">
-                <h3>{{ presentation.title }}</h3>
-                <p>{{ presentation.author }}</p>
-                {{ presentation.description | safe }}
-                <ul class="list-inline">
-                    {% if 'pdf_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.pdf_url }}"><i class="bi bi-file-earmark-pdf"></i> PDF</a></li>
-                    {% endif %}
-                    {% if 'post_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.post_url }}"><i class="bi bi-rss-fill"></i> Blog Post</a></li>
-                    {% endif %}
-                </ul>
-            </div>
-        {% endfor %}
-    </div>
-
-    <div class="px-3 py-3 pt-md-5 pb-md-4 border-bottom">
-        <h2>Demonstration Videos</h2>
-        {% for presentation in videos %}
-            <div class="talk py-4 border-bottom">
-                <h3>{{ presentation.title }}</h3>
-                <p>{{ presentation.authors }}</p>
-                {{ presentation.description | safe }}
-                <ul class="list-inline">
-                    {% if 'video_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.video_url }}"><i class="bi bi-youtube"></i> Video</a></li>
-                    {% endif %}
-                    {% if 'slides_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.slides_url }}"><i class="bi bi-file-earmark-pdf"></i> Slides</a></li>
-                    {% endif %}
-                    {% if 'transcript_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ transcript_url.post_url }}"><i class="bi bi-file-earmark-text"></i> Transcription</a></li>
-                    {% endif %}
-                    {% if 'pdf_url' in presentation %}
-                    <li class="list-inline-item"><a href="{{ presentation.pdf_url }}"><i class="bi bi-file-earmark-pdf"></i> PDF</a></li>
-                    {% endif %}
-                </ul>
-            </div>
-        {% endfor %}
-    </div>
+        {% include 'partials/remarks.njk' %}
+        {% include 'partials/presentations.njk' %}
+        {% include 'partials/closing.njk' %}
+        {% include 'partials/videos.njk' %}
+        {% include 'partials/posters.njk' %}
 </div>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css" integrity="sha512-yexU9hwne3MaLL2PG+YJDhaySS9NWcj6z7MvUDSoMhwNghPgXgcvYgVhfj4FMYpPh1Of7bt8/RK5A0rQ9fPMOw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
