@@ -1,34 +1,76 @@
 ---
 layout: default
 ---
-<main role="main" class="bg-light">
-    <div class="container">
+<main role="main">
+    <div class="container" class="bs-light-bg-subtle">
         <div class="px-3 py-3 pt-md-5 pb-md-4 border-bottom">
             {{ content | safe }}
         </div>
 
-        <h2 id="toc">Table of Contents</h2>
+        <style>
+            .bg-tertiary-bg-rgb { background-color: rgb(247, 247,247); }
+        </style>
 
-        <ul>
-            <li><a href="#remarks">Remarks</a></li>
-            <li><a href="#presentations">Presentations</a></li>
-            <li><a href="#closing-plenary-panel">Closing Plenary Panel</a></li>
-            <li><a href="#demonstration-videos">Demonstration Videos</a></li>
-            <li><a href="#posters">Posters</a></li>
-        </ul>
+        <div class="px-3 py-3 pt-md-5 pb-md-4">
+            <h2 id="table-of-contents" tabindex="-1">Table of Contents <a class="header-anchor" href="#table-of-contents" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg>
+                </a>
+            </h2>
 
-        {% include 'partials/remarks.njk' %}
-        {% include 'partials/presentations.njk' %}
-        {% include 'partials/closing.njk' %}
-        {% include 'partials/videos.njk' %}
-        {% include 'partials/posters.njk' %}
-</div>
+            <ul>
+                <li>
+                    <a href="#remarks">Remarks</a>
+                </li>
+                <li>
+                    <a href="#presentations">Presentations</a>
+                </li>
+                <li>
+                    <a href="#closing-plenary-panel">Closing Plenary Panel</a>
+                </li>
+                <li>
+                    <a href="#demonstration-videos">Demonstration Videos</a>
+                </li>
+                <li>
+                    <a href="#posters">Posters</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg-tertiary-bg-rgb">
+        <div class="container">
+            {% include 'partials/remarks.njk' %}
+        </div>
+    </div>
+    <div class="bs-light-bg-subtle">
+        <div class="container">
+            {% include 'partials/presentations.njk' %}
+        </div>
+    </div>
+
+    <div class="bg-tertiary-bg-rgb">
+        <div class="container">
+            {% include 'partials/closing.njk' %}
+        </div>
+    </div>
+
+    <div class="bs-light-bg-subtle">
+        <div class="container">
+            {% include 'partials/videos.njk' %}
+        </div>
+    </div>
+
+    <div class="bg-tertiary-bg-rgb">
+        <div class="container">
+            {% include 'partials/posters.njk' %}
+        </div>
+    </div>
+</main>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css" integrity="sha512-yexU9hwne3MaLL2PG+YJDhaySS9NWcj6z7MvUDSoMhwNghPgXgcvYgVhfj4FMYpPh1Of7bt8/RK5A0rQ9fPMOw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-// https://github.com/sampotts/plyr?tab=readme-ov-file#multiple-players
-const players = Array
-    .from(document.querySelectorAll('.js-player'))
-    .map((p) => new Plyr(p));
+    // https://github.com/sampotts/plyr?tab=readme-ov-file#multiple-players
+    const players = Array
+        .from(document.querySelectorAll('.js-player'))
+        .map((p) => new Plyr(p));
 </script>
