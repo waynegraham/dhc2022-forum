@@ -5,6 +5,7 @@ eleventyNavigation:
     key: Planning Committee
     order: 4
 ---
+<div class="planning-committee">
 
 {% image "assets/images/dhcs-logo-transparent-1536x721.png", "DHC logo", "(min-width: 30em) 50vw, 100vw", "mx-auto d-block" %}
 
@@ -88,3 +89,5 @@ CLIR is grateful to everyone assisting with the planning of the 2022 Digitizing 
 *   Lisa Vallen, Georgia State University
 *   Emily Vinson, University of Houston Libraries
 *   Sterling Warren, National Museum of African American History and Culture
+
+</div>

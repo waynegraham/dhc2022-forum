@@ -6,6 +6,9 @@ eleventyNavigation:
     order: 3
 ---
 
+{% image "assets/images/dhcs-logo-transparent-1536x721.png", "DHC logo", "(min-width: 30em) 50vw, 100vw", "mx-auto d-block" %}
+
+
 <div class="float-start">   
     {% image "assets/images/MichelleCaswell.jpg", "Michelle Caswell", "(min-width: 30em) 50vw, 100vw", "d-block" %}
 

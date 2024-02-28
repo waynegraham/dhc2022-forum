@@ -1,10 +1,10 @@
 <div class="px-3 py-3 pt-md-5 pb-md-4">
-    <h2 id="remarks" tabindex="-1">Remarks <a class="header-anchor" href="#remarks" aria-hidden="true">
+    <h2 id="opening-remarks" tabindex="-1">Opening Remarks <a class="header-anchor" href="#opening-remarks" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16"><path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/><path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/></svg>
         </a>
     </h2>
 
-    <div class="container">
+    <div class="container px-3 py-3 pt-md-5 pb-md-4">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             {%- for remark in remarks -%}
                 <div class="col">
@@ -13,27 +13,27 @@
                             {{ remark.youtube_embed | safe }}
                         {% endif %}
                         <div class="card-body">
-                            <h5 class="cart-title">{{ remark.title }}</h5>
+                            <h3 class="cart-title">{{ remark.title }}</h3>
                             <p class="card-text">
-                                
+                                {{ remark.authors }}
                             </p>
                         </div>
                         <ul class="list-group list-group-flush">
-                                    {% if 'text_url' in remark %}
-                                        <li class="list-group-item">
-                                            <a href="{{ remark.text_url }}" class="btn btn-primary btn-lg">
-                                                <i class="bi bi-file-earmark-pdf-fill"></i> Text
-                                            </a>
-                                        </li>
-                                    {% endif %}
-                                    {% if 'slide_url' in remark %}
-                                        <li class="list-group-item">
-                                            <a href="{{ remark.slide_url }}" class="btn btn-primary btn-lg">
-                                                <i class="bi bi-laptop"></i> Slides
-                                            </a>
-                                        </li>
-                                    {% endif %}
-                                </ul>
+                            {% if 'text_url' in remark %}
+                                <li class="list-group-item">
+                                    <a href="{{ remark.text_url }}" class="btn btn-danger btn-lg">
+                                        <i class="bi bi-file-earmark-pdf-fill"></i> Text
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if 'slide_url' in remark %}
+                                <li class="list-group-item">
+                                    <a href="{{ remark.slide_url }}" class="btn btn-danger btn-lg">
+                                        <i class="bi bi-laptop"></i> Slides
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
                     </div>
                 </div>
             {%- endfor -%}

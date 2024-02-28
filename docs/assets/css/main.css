@@ -61,6 +61,13 @@ footer .footer-separator {
   background-color: #e6f0f0;
 }
 
+.bungundy-links .nav-link {
+  color: #9a1c46;
+}
+.bungundy-links .nav-link:hover {
+  text-decoration: underline;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: rgb(255, 255, 255);
 }
@@ -124,6 +131,10 @@ p {
   height: 50vh;
 }
 
+.vh-25 {
+  height: 25vh;
+}
+
 #header {
   background-image: linear-gradient(rgba(40, 33, 17, 0.5), rgba(40, 33, 17, 0.5)), url("../images/record.jpg");
   height: 50vh;
@@ -137,6 +148,14 @@ p {
 }
 #header .header-box h1 {
   font-weight: 700;
+}
+
+.planning-committee h1 {
+  padding-bottom: 1.3rem;
+}
+.planning-committee p {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
 }
 
 #btn-back-to-top {

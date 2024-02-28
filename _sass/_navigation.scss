@@ -1,5 +1,15 @@
 @import 'variables';
 
+.bungundy-links .nav-link {
+  color: $clir_burgundy;
+
+  &:hover { 
+    text-decoration: underline;
+    // border-bottom: 1px solid #000; 
+    // padding-bottom: 3px;
+  }
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255,255,255,1);
 }

@@ -2,8 +2,23 @@
 layout: default
 ---
 
-<main role="main" class="container">
-    <div class="px-3 py-3 pt-md-5 pb-md-4">
-        {{ content | safe }}
+<main role="main">
+    <div class="bg-light py-4 border-bottom">
+        <div class="container pb-2">
+            <h1 class="fs-4 py-2">Hidden Collections Program Links</h1>
+            <ul class="nav justify-content-center bungundy-links">
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.clir.org/hiddencollections/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.clir.org/hiddencollections/apply-for-an-award/">Apply for an Award</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.clir.org/hiddencollections/manage-an-award/">Manage an Award</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.clir.org/hiddencollections/funded-projects/">Funded Projects</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.clir.org/hiddencollections/2023-review-panel/">Meet the Reviewers</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.clir.org/hiddencollections/program-history/">About the Program</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="px-3 py-3 pt-md-5 pb-md-4">
+            {{ content | safe }}
+        </div>
     </div>
 </main>
